@@ -1,0 +1,63 @@
+class CfgPatches
+{
+	class Capsule_Functions
+	{
+		addonRootClass="Capsule";
+		requiredAddons[]=
+		{
+			"A3_Functions_F_Jets",
+			"Capsule"
+		};
+		requiredVersion=0.1;
+		units[]={};
+		weapons[]={};
+	};
+};
+class CfgFunctions
+{
+	class A3_Jets
+	{
+		class Ejection
+		{
+			class PlaneEjection
+			{
+				description="This O&T Expasnion Eden mod change vanilla function with fixes for MP, overite of vanilla class will deleted on Arma 3 dev fix. see FT ticket T174022";
+				file="\Capsule\Functions\fn_planeEjection.sqf";
+			};
+			class PlaneEjectionFX
+			{
+				description="This O&T Expasnion Eden mod change vanilla function with fixes for MP, overite of vanilla class will deleted on Arma 3 dev fix. see FT ticket T174022";
+				file="\Capsule\Functions\fn_planeEjectionFX.sqf";
+			};
+			class EjectionSeatRelease
+			{
+				description="This O&T Expasnion Eden mod change vanilla function with fixes for MP, overite of vanilla class will deleted on Arma 3 dev fix. see FT ticket T174022";
+				file="\Capsule\Functions\fn_ejectionSeatRelease.sqf";
+			};
+		};
+	};
+	class A3
+	{
+		class Ambient
+		{
+			class animalBehaviour
+			{
+				description="Animal behaviour control. Called by Animals_F\Data\Scripts\main.fsm.";
+				headerType=1;
+				file="\Capsule\Functions\fn_animalbehaviour.sqf";
+			};
+		};
+	};
+	class Globe
+	{
+		tag="Globe";
+		project="Globe";
+		class Ambient
+		{
+			class animalBehaviour
+			{
+				file="\Capsule\Functions\fn_animalbehaviourInitMP.sqf";
+			};
+		};
+	};
+};
