@@ -51,5 +51,5 @@ moveOut _pilot;
 _ejectionSeat spawn
 {
 	sleep 5;
-	_this setPhysicsCollisionFlag true;
+	_this setPhysicsCollisionFlag true
 };
