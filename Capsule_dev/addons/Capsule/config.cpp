@@ -58,9 +58,6 @@ class CfgAddons
 		};
 	};
 };
-
-#include "CfgMoves.cpp"
-
 class CfgVehicles
 {
 	class Car_F;
