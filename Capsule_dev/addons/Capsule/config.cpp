@@ -58,7 +58,6 @@ class CfgAddons
 		};
 	};
 };
-
 class CfgVehicles
 {
 	class Car_F;
