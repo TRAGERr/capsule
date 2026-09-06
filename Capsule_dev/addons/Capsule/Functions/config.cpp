@@ -15,6 +15,25 @@ class CfgPatches
 };
 class CfgFunctions
 {
+	class A3
+	{
+		class Ambient
+		{
+			class animalBehaviour
+			{
+				description="Animal behaviour control. Called by Animals_F\Data\Scripts\main.fsm.";
+				headerType=1;
+				file="\Capsule\Functions\fn_animalbehaviour.sqf";
+			};
+		};
+		class HoldActions
+		{
+			class holdAction_animationTimerCode
+			{
+				file = "\Capsule\Functions\HoldActions\fn_holdAction_animationTimerCode.sqf";
+			};
+		};
+	};
 	class A3_Jets
 	{
 		class Ejection
@@ -33,18 +52,6 @@ class CfgFunctions
 			{
 				description="This O&T Expasnion Eden mod change vanilla function with fixes for MP, overite of vanilla class will deleted on Arma 3 dev fix. see FT ticket T174022";
 				file="\Capsule\Functions\fn_ejectionSeatRelease.sqf";
-			};
-		};
-	};
-	class A3
-	{
-		class Ambient
-		{
-			class animalBehaviour
-			{
-				description="Animal behaviour control. Called by Animals_F\Data\Scripts\main.fsm.";
-				headerType=1;
-				file="\Capsule\Functions\fn_animalbehaviour.sqf";
 			};
 		};
 	};
