@@ -1,0 +1,11 @@
+{
+	"inputDirs": [
+		"P:/Capsule/"
+	],
+	"includePaths": [
+		"P:/"
+	],
+	"excludeList": [],
+	"outputDir": "P:/",
+	"workerThreads": 8
+}
