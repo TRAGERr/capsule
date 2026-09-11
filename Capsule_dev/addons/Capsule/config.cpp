@@ -61,6 +61,39 @@ class CfgAddons
 class CfgVehicles
 {
 	class Car_F;
+	class Items_base_F;
+	class Books_base_F: Items_base_F
+	{
+		delete ObjectTextureCustom0;
+		class Attributes
+		{
+			class ObjectTextureCustom0
+			{
+				displayName="$STR_3den_object_attribute_objecttexturecustom0_displayname";
+				tooltip="$STR_3den_object_attribute_objecttexturecustom_tooltip";
+				property="ObjectTextureCustom0";
+				control="Edit";
+				expression="_this setObjectTextureGlobal [0,_value]";
+				defaultValue="(getObjectTextures _this) param [0,'',['']]";
+			};
+		};
+	};
+	class Newspaper_base_F: Items_base_F
+	{
+		delete ObjectTextureCustom0;
+		class Attributes
+		{
+			class ObjectTextureCustom0
+			{
+				displayName="$STR_3den_object_attribute_objecttexturecustom0_displayname";
+				tooltip="$STR_3den_object_attribute_objecttexturecustom_tooltip";
+				property="ObjectTextureCustom0";
+				control="Edit";
+				expression="_this setObjectTextureGlobal [0,_value]";
+				defaultValue="(getObjectTextures _this) param [0,'',['']]";
+			};
+		};
+	};
 	class MRAP_03_base_F: Car_F
 	{
 		soundEngineOnInt[]=
@@ -1830,17 +1863,6 @@ class CfgSoundSets
 		distanceFilter="LowIntensityDistanceFilter";
 		occlusionFactor=0.5;
 		obstructionFactor=0.30000001;
-	};
-};
-class VehicleExplosionEffectsBig
-{
-	class ExpSparksBig;
-};
-class VehicleCapacitorExplosionEffectsBig: VehicleExplosionEffectsBig
-{
-	class ExpSparksBig: ExpSparksBig
-	{
-		type="ExpSparksCapacitor";
 	};
 };
 class CfgSoundShaders
@@ -8412,17 +8434,6 @@ class CfgWeapons
 	class arifle_AK12U_base_F: arifle_AK12_base_F
 	{
 		recoil="recoil_ak12u";
-	};
-	class missiles_SAAMI: MissileLauncher
-	{
-		class StandardSound
-		{
-			soundSetShot[]=
-			{
-				"Launcher_Firefist_Shot_SoundSet",
-				"Static_Launcher_Titan_ATAA_Tail_SoundSet"
-			};
-		};
 	};
 	class arifle_MSBS65_base_F: Rifle_Base_F
 	{

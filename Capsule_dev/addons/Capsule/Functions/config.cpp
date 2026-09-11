@@ -30,7 +30,7 @@ class CfgFunctions
 		{
 			class holdAction_animationTimerCode
 			{
-				file = "\Capsule\Functions\HoldActions\fn_holdAction_animationTimerCode.sqf";
+				file="\Capsule\Functions\HoldActions\fn_holdAction_animationTimerCode.sqf";
 			};
 		};
 	};
