@@ -60,6 +60,7 @@ class CfgAddons
 };
 class CfgVehicles
 {
+	class Plane_Base_F;
 	class Car_F;
 	class Items_base_F;
 	class Books_base_F: Items_base_F
@@ -128,7 +129,6 @@ class CfgVehicles
 	{
 		extCameraPosition[] = { 0, 2, -8.75 };
 	};
-
 	class SoundSetSource_01_base_F;
 	class Truck_02_base_F;
 	class LandVehicle;
@@ -143,6 +143,29 @@ class CfgVehicles
 			class Globe_animalBehaviourMP
 			{
 				postInit="[(_this # 0)] call Globe_fnc_animalBehaviour";
+			};
+		};
+	};
+	class Plane_Fighter_01_Base_F: Plane_Base_F
+	{
+		class UserActions
+		{
+			class Plane_Fighter_01_Eject;
+			class Plane_Fighter_01_tailhook_down: Plane_Fighter_01_Eject
+			{
+				statement="this animate ['tailhook',0]; this animate ['tailhook_door_l',0]; this animate ['tailhook_door_r',0]; this SetUserMFDvalue [4,1]; [this] spawn BIS_fnc_AircraftTailhook; [ [this], { params ['_veh']; if (player in _veh) then { playSound 'Plane_Fighter_01_tailhook_down_sound'} else { _veh say3D ['Plane_Fighter_01_tailhook_down_sound', 100, 1, false]; }; }] remoteExec ['spawn', 0];";
+			};
+			class Plane_Fighter_01_tailhook_up: Plane_Fighter_01_tailhook_down
+			{
+				statement="this animate ['tailhook',1]; this animate ['tailhook_door_l',1]; this animate ['tailhook_door_r',1]; this SetUserMFDvalue [4,0]; [ [this], { params ['_veh']; if (player in _veh) then { playSound 'Plane_Fighter_01_tailhook_up_sound'; } else { _veh say3D ['Plane_Fighter_01_tailhook_up_sound', 100, 1, false]; }; } ] remoteExec ['spawn', 0];";
+			};
+			class Plane_Fighter_01_fold_wings: Plane_Fighter_01_Eject
+			{
+				statement="this animate ['wing_fold_l',1]; this animate ['wing_fold_r',1]; this animate ['wing_fold_cover_l',1]; this animate ['wing_fold_cover_r',1]; [this, ['Plane_Fighter_01_foldwing_sound', 150, 1, 0, 0, false]] remoteExecCall ['say3D'];";
+			};
+			class Plane_Fighter_01_unfold_wings: Plane_Fighter_01_fold_wings
+			{
+				statement="this animate ['wing_fold_l',0]; this animate ['wing_fold_r',0]; this animate ['wing_fold_cover_l',0]; this animate ['wing_fold_cover_r',0]; [this, ['Plane_Fighter_01_foldwing_sound', 150, 1, 0, 0, false]] remoteExecCall ['say3D'];";
 			};
 		};
 	};
