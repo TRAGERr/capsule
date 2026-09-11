@@ -41,7 +41,7 @@ class CfgFunctions
 			class Carrier01AnimateDeflectors
 			{
 				description="This O&T Expasnion Eden mod change vanilla function with fixes for MP, overite of vanilla class will deleted on Arma 3 dev fix. see FT ticket T174022";
-				file="\Capsule\Functions\Futura\fn_carrier01animatedeflectors.sqf";
+				file="\Capsule\Functions\fn_carrier01animatedeflectors.sqf";
 			};
 		};
 		class AircraftFunctionality
@@ -49,7 +49,7 @@ class CfgFunctions
 			class AircraftTailhookAi
 			{
 				description="This O&T Expasnion Eden mod change vanilla function with fixes for MP, overite of vanilla class will deleted on Arma 3 dev fix. see FT ticket T174022";
-				file="\Capsule\Functions\Futura\fn_AircraftTailhookAi.sqf";
+				file="\Capsule\Functions\fn_AircraftTailhookAi.sqf";
 			};
 		};
 		class CarrierOps
@@ -57,7 +57,7 @@ class CfgFunctions
 			class AircraftTailhook
 			{
 				description="This O&T Expasnion Eden mod change vanilla function with fixes for MP, overite of vanilla class will deleted on Arma 3 dev fix. see FT ticket T174022";
-				file="\Capsule\Functions\Futura\fn_aircraftTailhook.sqf";
+				file="\Capsule\Functions\fn_aircraftTailhook.sqf";
 			};
 		};
 		class Ejection
