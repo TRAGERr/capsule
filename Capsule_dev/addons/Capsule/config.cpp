@@ -9037,5 +9037,23 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPknlMstpSnonWnonDnon_AwopPknlMstpSoptWbinDnon", 0.02
 			};
 		};
+
+		class HubTemplate_Briefing;
+		class HubBriefing_ext: HubTemplate_Briefing
+		{
+			looped = 1;
+		};
+
+		class CutSceneAnimationBaseZoZo;
+		class HubBriefing_ext_Contact: CutSceneAnimationBaseZoZo
+		{
+			delete looped;
+		};
+
+		class HubSpectator_stand;
+		class HubSpectator_stand_Contact: HubSpectator_stand
+		{
+			delete looped;
+		};
 	};
 };
