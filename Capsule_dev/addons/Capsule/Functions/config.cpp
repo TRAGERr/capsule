@@ -98,4 +98,15 @@ class CfgFunctions
 			};
 		};
 	};
+	class A3_Modules
+	{
+		class ObjectModifiers
+		{
+			class moduleMode
+			{
+				description="https://feedback.bistudio.com/T200468";
+				file="\Capsule\Functions\ObjectModifiers\fn_moduleMode.sqf";
+			};
+		};
+	};
 };

@@ -8621,7 +8621,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"AmovPknlMrunSrasWpstDr", 0.02,
 				"AmovPknlMrunSrasWpstDfr", 0.02,
 				"Unconscious", 0.02,
-				"AovrPercMstpSrasWpstDf", 0.02,
+				"AovrPercMstpSrasWpstDf", 0.03,
 				"AmovPercMstpSrasWpstDnon_AcinPknlMwlkSnonWpstDb_2", 0.2,
 				"AmovPknlMstpSrasWpstDnon_relax", 0.2,
 				"AinvPercMstpSrasWrflDnon", 0.05,
