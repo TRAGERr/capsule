@@ -8672,8 +8672,16 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			{
 				"AmovPknlMstpSrasWrflDnon_turnL", 0.02,
 				"AmovPknlMstpSrasWrflDnon_turnR", 0.02,
-				"AmovPknlMstpSrasWrflDnon_AmovPercMstpSrasWrflDnon", 0.02, //change
-				"AmovPknlMstpSrasWrflDnon_AmovPpneMstpSrasWrflDnon", 0.02, //change
+
+				/*
+					"AmovPknlMstpSrasWrflDnon_AmovPercMstpSrasWrflDnon", 0.02, //change
+					"AmovPknlMstpSrasWrflDnon_AmovPpneMstpSrasWrflDnon", 0.02, //change
+				*/
+				"AmovPknlMstpSrasWrflDnon_AmovPercMstpSrasWrflDnon",
+				0.0099999998,
+				"AmovPknlMstpSrasWrflDnon_AmovPpneMstpSrasWrflDnon",
+				0.0099999998,
+
 				"AidlPknlMstpSrasWrflDnon_AI", 0.02,
 				"AinvPknlMstpSnonWrflDnon_AinvPknlMstpSnonWrflDnon_medic", 0.02,
 				"AmovPknlMwlkSrasWrflDf", 0.02,
